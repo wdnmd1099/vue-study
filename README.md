@@ -1,24 +1,5 @@
-# vue-demo
+因为没有环境包
 
-## Project setup
-```
-yarn install
-```
+所以搭建vue2环境直接替换就可以了
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+按照笔记的vue安装的教程来安装就可以了
