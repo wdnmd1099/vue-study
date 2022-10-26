@@ -1,7 +1,7 @@
 <template>
   <div class="app">
       这是xxx的值：{{xxx}}
-      <C1 :xxx.sync="xxx"/>
+      <C1/>
   </div>
 </template>
 
@@ -14,6 +14,23 @@ export default {
     return {xxx:100,};
   },
   components: {C1},
+  provide(){
+    return {
+      xxx:this.xxx,
+      add:this.add,
+      change:this.change,
+    }
+  },
+  methods: {
+    add(){
+        this.xxx += 100
+        console.log(this.xxx)
+      },
+      change(){
+        this.xxx = 2223333
+        console.log(this.xxx)
+      }
+  },
 };
 </script>
 
